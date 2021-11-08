@@ -1,0 +1,76 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 4rem; 
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .paul {
+        width: 50%;
+    }
+    h4 {
+        font-size: 2rem;
+    }  
+    .working-process {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}  
+
+@media screen and (max-width:768px) {
+    #exp h3 {
+     font-size: 2.5rem;
+}
+.work-grid {
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+
+@media screen and (max-width:576px) {
+    #tm {
+        background-image: none;
+        background-color: #d2d2d2;
+    }
+
+    .tm-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tm-content {
+        width: 100%;
+    }
+
+    .quote {
+        width: 4rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .hero-content span {
+        font-size: 1.8rem;
+    }
+
+    #exp h3 {
+        font-size: 2rem;
+   }
+
+   .working-process-item {
+       padding: 4.3rem;
+   }
+
+   .exp-grid {
+        grid-template-columns:1fr;
+    }
+}
+        

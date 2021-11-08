@@ -1,0 +1,575 @@
+/*-----------------
+Template name : Paul lapkin
+Template uri  : 
+Author        : Raihan
+Author uri    : 
+version       : 1.0
+--------------------*/
+
+/*--------------------
+CSS index--
+0. Google Fonts
+1. Common Css
+2. Reusable Components
+3. Hero section
+4. About Me section
+5. Working process section
+6. Exprience section
+7. Work section
+8. Testimonial section
+9. Contact Section
+10. Footer section
+
+--------------------*/
+
+
+/* 0. Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap');
+
+/* 1. Common Css */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+ 
+ul li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* 2. Reusable Components */
+
+.container {
+    max-width: 115rem;
+    margin: auto;
+}
+
+section {
+    padding: 12rem 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    width: 20rem;
+    padding: 1.5rem 0;
+    text-transform: capitalize;
+    text-align: center;
+    border: .2rem solid #000;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.section-title {
+    margin-bottom: 6.3rem;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 3rem ;
+}
+
+/* Animation */
+@-webkit-keyframes arrow {
+    0% {
+        top: 1rem;
+    }
+
+    80% {
+        top: 3.5rem;
+    }
+
+    100% {
+        top: 1rem;
+    }
+}
+@keyframes arrow {
+    0% {
+        top: 1rem;
+    }
+
+    80% {
+        top: 3.5rem;
+    }
+
+    100% {
+        top: 1rem;
+    }
+}
+
+/* 3. Hero section */
+
+#hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(img/hero.jpg) no-repeat center top /cover;
+    position: relative;
+}
+
+.menu-area  {
+    padding: 10rem 0;
+}
+
+.logo   {
+    float: left;
+}
+
+.logo a img {
+    font-size: 3.5rem;
+}
+
+.menu   {
+    float: right;
+}
+
+.menu ion-icon  {
+    color: #fff;
+    font-size: 3.5rem;
+    border: 0.1rem solid #fff;
+}
+
+.hero-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #fff;
+    display: inline-block;
+    letter-spacing: .3rem;
+    border-top: 0.2rem solid #fff;
+    border-bottom: 0.2rem solid #fff;
+}
+
+.hero-content span {
+    display: block;
+    font-size: 2.3rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.next-section {
+    text-align: center;
+}
+
+.next-section a {
+    position: absolute;
+    bottom: 4rem;
+}
+
+.next-section a ion-icon {
+    font-size: 4.5rem;
+    color: #fff;
+    position: relative;
+    -webkit-animation: arrow 2s infinite ease-in-out;
+            animation: arrow 2s infinite ease-in-out;
+}
+
+/* Hamburger menu */
+
+.hb-menu {
+    width: 0%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.hb-menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center; 
+}
+
+.hb-menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0.4rem 0;
+    display: inline-block;
+}
+
+.hb-menu ul li:hover a {
+    color: #fa0429;
+}
+
+.close-btn a ion-icon {
+    color: #fff;
+    font-size: 4rem;
+    top: 4rem;
+    right: 4rem;
+    position: absolute ;
+}
+
+canvas.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ 
+
+div.uk-sticky-fixed {
+    top: 0  !important;
+    background-color: rgba(0,0,0,0.9);
+    left: 0;
+    width: 100% !important;
+    padding: 1.8rem 0;
+} 
+
+.uk-lightbox {
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* 4. About Me section */
+
+.about  {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 8rem;
+}
+
+.paul {
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}  
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #ff2b4a;
+    border-color: #ff2b4a;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border-color: #ff2b4a;
+    color: #ff2b4a;
+    background: transparent;
+}
+
+.about-cta-btn {
+    margin-top: 4rem;
+}
+
+/* 5. Working process section */
+
+#process {
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.working-process {
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-gap: 1.5rem;
+}
+.working-process-item {
+    background-color: #000;
+    padding: 8rem 0;
+}
+
+.working-process-item ion-icon {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 4.3rem;
+}
+
+.working-process-item h4 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.working-process-item:nth-child(1) {
+    background-color: #10c6fc;
+}
+
+.working-process-item:nth-child(2) {
+    background-color: #835aeb;
+}
+
+.working-process-item:nth-child(3) {
+    background-color: #002453;
+}
+
+.working-process-item:nth-child(4) {
+    background-color: #ff2b4a;
+}
+
+/* 6. Exprience section */
+
+#exp {
+    background: #000 url(img/experience.jpg) no-repeat center top / cover fixed;
+    color: #fff;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.exp-grid-item {
+    background-color: rgba(0,0,0,0.7);
+    padding: 4rem 2rem;
+}
+
+#exp h3 {
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#exp h4 {
+    color: #fff;
+}
+
+hr {
+    border: 0;
+    border-bottom: .1rem solid #fff;
+    margin: 1.5rem 0;
+}
+
+/* 7. Work section */
+
+.work-filter {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.work-filter button {
+    cursor: pointer;
+    background-color: #fff;
+    border: .1rem solid #000;
+    margin: 0 .5rem;
+    padding: .3rem .5rem;
+}
+.work-filter .mixitup-control-active {
+    background-color: #ff2b4a;
+    color: #fff;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .8rem;
+} 
+
+.work-grid-item:nth-child(5) {
+    grid-column: 1/3;
+}
+.work-grid-item a img {
+    height: 20rem;
+}
+
+/* 8. Testimonial section */
+
+#tm {
+    background: #d2d2d2 url(./img/testimonial.jpg) no-repeat center top /cover;
+}
+.tm-grid {
+    display: grid;
+    grid-template-columns: 2,1fr;
+    grid-gap: 3rem;
+}
+
+.quote {
+    width: 8rem;
+}
+
+.tm-content {
+    margin: 3rem 0;
+    width: 60%;
+}
+
+.sign {
+    width: 10rem;
+}
+
+/* 9. Contact Section */
+
+#contact {
+    background: #7385c3 url(img/contact.jpg) no-repeat center / cover fixed;
+    color: #fff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.contact-grid-item:nth-child(1),
+.nested-contact-grid-item  {
+    background-color: rgba(0,0,0,0.75);
+    padding: 5rem 2rem;
+}
+
+.contact-grid-item h3 {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+form input[type="text"],
+form input[type="email"],
+textarea {
+    width: 100%;
+    border: .1rem solid #fff;
+    background: transparent;
+    color: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.cta-contact-btn {
+    text-align: right;
+    margin: 3rem 0;
+}
+
+.cta-contact-btn input[type="submit"] {
+    cursor: pointer;
+    background-color: #ff2b4a;
+    border-color: #ff2b4a;
+}
+
+.cta-contact-btn input[type="submit"]:hover {
+    color: #12dee6;
+    background-color: transparent;
+}
+
+textarea {
+    height: 20rem;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+::-ms-input-placeholder {
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.nested-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+/* 10. Footer section */
+
+#footer {
+    background-color: #222;
+    padding: 4rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.social-list  {
+    margin-bottom: 1.5rem;
+}
+
+.social-list ul li {
+    display: inline-block;
+}
+
+.social-list ul li a ion-icon {
+    color: #fff;
+    padding: 0 .5rem;
+    font-size: 2rem;
+    border-right: .1rem solid #fff;
+}
+
+.social-list ul li:last-child a ion-icon {
+    border-right: none;
+} 
+
+.copyright a {
+    color: #ff2b4a;
+}
+
+.copyright a:hover {
+    color: #fa0429;
+}
+
+.totop a {
+    color: #fff;
+    margin: 3rem 0;
+    border: .1rem solid #fff;
+    padding: 1rem;
+}
+
+.totop a:hover {
+    color: #ff2b4a;
+    border-color: #ff2b4a;
+}
